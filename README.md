@@ -64,7 +64,18 @@ Há diversos tipos de serviços oferecidos por essa ferramenta que se distinguem
 ## Tipos de Copilot
 
 A ferramenta principal da Microsoft, que faz uso de agentes e diferentes ferramentas para o desenvolvimento de um copiloto é a Copilot Studio, como o próprio nome sugere.
+Você pode acessar a plataforma do copile studio clicando [aqui](https://www.microsoft.com/pt-br/microsoft-copilot/microsoft-copilot-studio) e; também, a sua [documentação oficial](https://learn.microsoft.com/pt-br/microsoft-copilot-studio/).
   
+## Ambientes, soluções e a Power Platform Pipelines
 
+Na Microsoft Copilot Studio, os conceitos de ambientes e soluções são fundamentais para a organização, desenvolvimento, implantação e manutenção de aplicações dentro do ecossistema da Microsoft Power Platform.
+
+Um ambiente é uma instância logicamente separada dentro da Power Platform, que permite o isolamento de recursos e dados. Cada ambiente pode conter aplicativos, fluxos, bots (como os desenvolvidos no Copilot Studio), tabelas do Dataverse, conectores personalizados, entre outros componentes. Além disso, cada ambiente possui configurações próprias de segurança, políticas de prevenção contra perda de dados (DLP – Data Loss Prevention), e permissões de acesso. Dessa forma, é comum que uma organização utilize múltiplos ambientes, por exemplo, para as fases de desenvolvimento, homologação e produção. Essa estrutura possibilita o desenvolvimento seguro e controlado de soluções, evitando impactos em sistemas críticos durante testes e atualizações.
+
+As soluções são contêineres lógicos que agrupam um ou mais componentes desenvolvidos na Power Platform, como aplicativos, fluxos, tabelas, conexões e bots. Elas são essenciais para a prática de Application Lifecycle Management (ALM). As soluções permitem a exportação e importação de funcionalidades entre ambientes, viabilizando uma abordagem modular, reutilizável e versionável do desenvolvimento. As soluções podem ser não gerenciadas, geralmente utilizadas em ambientes de desenvolvimento, ou gerenciadas, destinadas a ambientes de produção, onde as modificações diretas não são permitidas. Essa distinção garante o controle de versões e evita alterações não autorizadas em ambientes críticos.
+
+Para facilitar e padronizar a movimentação de soluções entre ambientes, a Microsoft fornece o recurso denominado Power Platform Pipelines. Essa funcionalidade oferece uma forma nativa e estruturada de automatizar a promoção de soluções entre os diferentes ambientes (por exemplo, do ambiente de desenvolvimento para o ambiente de testes e posteriormente para produção). Os pipelines permitem aplicar políticas de validação, checkpoints de aprovação (como aprovação manual por gatekeepers), testes automatizados e outras práticas típicas de DevOps. Essa automação contribui significativamente para o aumento da confiabilidade e rastreabilidade nas implantações.
+
+Além disso, os Power Platform Pipelines são integráveis a ferramentas externas como o Azure DevOps e o GitHub Actions, mas também podem ser configurados e utilizados independentemente, por meio do Power Platform Admin Center. A utilização de pipelines é recomendada em ambientes corporativos que desejam escalar suas operações de desenvolvimento low-code de forma segura, controlada e auditável.
 
 
